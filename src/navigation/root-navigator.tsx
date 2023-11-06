@@ -4,7 +4,7 @@ import React, { useEffect } from 'react';
 
 import { useAuth } from '@/core';
 import { Home } from '@/screens';
-import { Pokemon } from '@/screens/pokemon';
+import { PokemonDetails } from '@/screens/pokemon-details';
 
 import { NavigationContainer } from './navigation-container';
 
@@ -32,7 +32,7 @@ export const Root = () => {
       }}
     >
       <Stack.Screen name="Home" component={Home} />
-      <Stack.Screen name="Pokemon" component={Pokemon} />
+      <Stack.Screen name="Pokemon" component={PokemonDetails} />
     </Stack.Navigator>
   );
 };

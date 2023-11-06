@@ -7,7 +7,7 @@ interface PokemonProps {
   navigation: NativeStackNavigationProp<any>;
 }
 
-export const Pokemon = ({ navigation }: PokemonProps) => {
+export const PokemonDetails = ({ navigation }: PokemonProps) => {
   return (
     <>
       <FocusAwareStatusBar />

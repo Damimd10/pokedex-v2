@@ -7,8 +7,8 @@ export default ({ config }: ConfigContext): ExpoConfig => ({
   ...config,
   name: Env.NAME,
   description: `${Env.NAME} Mobile App`,
-  owner: Env.EXPO_ACCOUNT_OWNER,
-  slug: 'obytesapp',
+  owner: 'damianmd10',
+  slug: 'pokedex',
   version: Env.VERSION.toString(),
   orientation: 'portrait',
   icon: './assets/icon.png',
@@ -38,7 +38,7 @@ export default ({ config }: ConfigContext): ExpoConfig => ({
     favicon: './assets/favicon.png',
   },
   plugins: [
-    ['@bacons/link-assets', ['./assets/fonts/Inter.ttf']],
+    ['@bacons/link-assets', ['./assets/fonts/Roboto-Medium.ttf']],
     'expo-localization',
     [
       'expo-build-properties',
@@ -70,7 +70,7 @@ export default ({ config }: ConfigContext): ExpoConfig => ({
   extra: {
     ...ClientEnv,
     eas: {
-      projectId: Env.EAS_PROJECT_ID,
+      projectId: 'c7876789-0124-4b71-a4db-ac6adeb4d5a4',
     },
   },
 });

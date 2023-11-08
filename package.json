@@ -38,6 +38,7 @@
   },
   "dependencies": {
     "@bacons/link-assets": "^1.1.0",
+    "@expo/vector-icons": "^13.0.0",
     "@gorhom/bottom-sheet": "^4.5.1",
     "@graphql-typed-document-node/core": "^3.2.0",
     "@hookform/resolvers": "^2.9.11",
@@ -74,6 +75,7 @@
     "react-native-flash-message": "^0.4.0",
     "react-native-gesture-handler": "~2.12.0",
     "react-native-image-colors": "^2.3.0",
+    "react-native-linear-gradient": "^2.8.3",
     "react-native-mmkv": "2.6.3",
     "react-native-reanimated": "~3.3.0",
     "react-native-restart": "0.0.27",
@@ -121,7 +123,7 @@
     "prettier": "^2.8.4",
     "react-native-svg-transformer": "^1.1.0",
     "react-test-renderer": "^18.2.0",
-    "tailwindcss": "^3.2.7",
+    "tailwindcss": "3.3.2",
     "ts-jest": "^29.0.5",
     "typescript": "^5.1.6"
   },

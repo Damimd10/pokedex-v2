@@ -32,6 +32,7 @@ export const Root = () => {
       }}
     >
       <Stack.Screen name="Home" component={Home} />
+      {/** @ts-ignore */}
       <Stack.Screen name="Pokemon" component={PokemonDetails} />
     </Stack.Navigator>
   );

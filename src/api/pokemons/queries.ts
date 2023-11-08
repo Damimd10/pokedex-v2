@@ -17,3 +17,20 @@ export const pokemonListQuery: TypedDocumentNode<PokemonResponse> = parse(gql`
     }
   }
 `);
+
+export const pokemonDetailsQuery: TypedDocumentNode<PokemonResponse> =
+  parse(gql`
+    query ($id: Int!) {
+      pokemon_v2_pokemon(where: { id: { _eq: $id } }) {
+        id
+        name
+        order
+        pokemon_v2_pokemontypes {
+          pokemon_v2_type {
+            id
+            name
+          }
+        }
+      }
+    }
+  `);

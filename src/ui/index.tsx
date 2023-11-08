@@ -1,3 +1,4 @@
+export * from './badge';
 export * from './core';
 export * from './error-handler';
 export * from './focus-aware-status-bar';

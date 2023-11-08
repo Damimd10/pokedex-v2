@@ -10,6 +10,8 @@ import { Badge, Image, Text, View } from '@/ui';
 import { padWithLeadingZeros } from '@/utils/leading-zeros';
 import { POKEMON_TYPES } from '@/utils/pokemon-types';
 
+import { PokemonTabs } from './pokemon-tabs';
+
 interface PokemonProps {
   navigation: NativeStackNavigationProp<any>;
   route: RouteProp<{ params: { id: string } }>;
@@ -58,6 +60,7 @@ export const PokemonDetails = ({ navigation, route }: PokemonProps) => {
             </View>
           </View>
         </LinearGradient>
+        <PokemonTabs />
       </View>
     </>
   );

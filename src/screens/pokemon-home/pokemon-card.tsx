@@ -48,11 +48,11 @@ export const PokemonCard = ({ id, pokemon }: PokemonCardProps) => {
             {pokemon.types.map((type) => {
               return (
                 <View
-                  className="my-0.5 flex flex-row items-center rounded-3xl bg-[#283141]/25 pl-1 pr-2"
+                  className="my-0.5 flex flex-row items-center rounded-3xl bg-[#283141]/10 pl-1 pr-2"
                   key={type}
                 >
                   <Image
-                    className="h-4 w-4 object-contain"
+                    className="h-5 w-5 object-contain"
                     source={
                       POKEMON_TYPES[type as keyof typeof POKEMON_TYPES].icon
                     }
